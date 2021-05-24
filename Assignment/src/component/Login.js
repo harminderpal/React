@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import  ReactDOM from "react-dom";
+import './logic.css'
 
 class MyApp extends React.Component {
   constructor(props){
@@ -8,10 +9,10 @@ class MyApp extends React.Component {
       UserName:"",
       Password: ""
     }
-  }
-  // const [UserName, setUserName] = useState("");
+  };
+  //  const [UserName, setUserName] = useState("");
 
-  // const [Password, setPassword] = useState("");
+  //  const [Password, setPassword] = useState("");
    inputEvent = (eve) => {
     this.setState({
       UserName: eve.target.value,
