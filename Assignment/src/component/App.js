@@ -1,8 +1,10 @@
 import React from 'react';
-import Employee_Data from './component/Employee_Data';
+import Emp from './component/Employee_Data';
+// import NewEmployee from './component/NewEmployee';
+import Employe from './component/Employee';
+import NewEmployee from './component/NewEmployee';
 
-class Emp_Data extends React.Component{
-    render (){
+
 const employees = [
     {
         id: 'e1',
@@ -36,14 +38,18 @@ const employees = [
     }
 ];
     const MyApp = () =>{
+        const valuesEntered=(a,b,c) =>{
+            console.log("Entered name:",a)
+            console.log("Entered age:",b)
+            console.log("Entered id:",c)
+        }
     return(
        <> <div>
             <h1>Employees Data</h1>
-            <Employee_Data employees ={employees}/>
+            <Emp employees ={employees}/>
         </div>
         </>
     );
-}
     }
-}
-export default MyApp
+ 
+export default MyApp;
